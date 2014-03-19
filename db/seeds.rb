@@ -7,11 +7,12 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Product.delete_all
 #...
-Product.create!(title: "Programming Ruby 1.9 & 2.0",
+10.times do Product.create!(title: "Programming Ruby 1.9 & 2.0",
   description:
   %{<p>
     Ruby is the fastest growing and most exciting dynamic language out there.
-    </p>},
-    image_url: "ruby.jpg",
-    price: 49.95)
+  </p>},
+  image_url: "ruby.jpg",
+  price: 49.95)
 
+end
